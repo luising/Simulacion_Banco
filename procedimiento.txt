@@ -1,0 +1,461 @@
+
+-------------------Se genera un TLL---------------------------------- 
+El tiempo de llegada del siguiente usuario es: 73.06305084920743
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 73
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 18.005521332373345
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 73
+Sale de la cola el usuario que llego al segundo 73 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 91
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 60.69192044739827
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 14 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 132
+La caja[0] se libera, el usuario tardo en salir: 59.49887562654396 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 152
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 36.89077260628126
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 152
+Sale de la cola el usuario que llego al segundo 152 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 189
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 101.26911627856438
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 7 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 197
+La caja[0] se libera, el usuario tardo en salir: 44.770812332657314 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 290
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 23.202780380160267
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 290
+Sale de la cola el usuario que llego al segundo 290 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 313
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 32.97909237027968
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 331
+La caja[0] se libera, el usuario tardo en salir: 40.83377402642077 segundos. 
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 18 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 346
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 29.526136903979943
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 346
+Sale de la cola el usuario que llego al segundo 346 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 376
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 88.87155498857453
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 10 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 438
+La caja[0] se libera, el usuario tardo en salir: 91.9325377480724 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 465
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 41.01325835262391
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 465
+Sale de la cola el usuario que llego al segundo 465 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 506
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 111.41938158110352
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 515
+La caja[0] se libera, el usuario tardo en salir: 50.01799922523162 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 516
+Sale de la cola el usuario que llego al segundo 506 y pasa a la caja[0]
+El usuario paso: 10 segundos en la cola 
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 574
+La caja[0] se libera, el usuario tardo en salir: 57.90806672293585 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 617
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 42.09028651269612
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 617
+Sale de la cola el usuario que llego al segundo 617 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 659
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 44.04511746130975
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 18 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 703
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 11.820746325355477
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 0 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 705
+La caja[0] se libera, el usuario tardo en salir: 87.50698596488051 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 715
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 39.916758334606214
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 715
+Sale de la cola el usuario que llego al segundo 715 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 755
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 32.98868802946488
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 773
+La caja[0] se libera, el usuario tardo en salir: 58.11094917319668 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 774
+Sale de la cola el usuario que llego al segundo 755 y pasa a la caja[0]
+El usuario paso: 19 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 788
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 45.90312099630827
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 28 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 831
+La caja[0] se libera, el usuario tardo en salir: 56.61083372095803 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 834
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 44.55324539819934
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 834
+Sale de la cola el usuario que llego al segundo 834 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 879
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 17.334665509411046
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 879
+La caja[0] se libera, el usuario tardo en salir: 45.209836861100904 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 880
+Sale de la cola el usuario que llego al segundo 879 y pasa a la caja[0]
+El usuario paso: 1 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 896
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 10.455497742616936
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 2 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 906
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 10.460096949492133
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 4 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 916
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 16.669528194670672
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 933
+La cola actual es de :2
+El tiempo de llegada del siguiente usuario es: 134.1040824002483
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 2
+Paso un total de : 1 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 1
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 962
+La caja[0] se libera, el usuario tardo en salir: 82.35325417191446 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 963
+Sale de la cola el usuario que llego al segundo 916 y pasa a la caja[0]
+El usuario paso: 47 segundos en la cola 
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 1028
+La caja[0] se libera, el usuario tardo en salir: 65.20136202281728 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 1067
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 15.10345778693861
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 1067
+Sale de la cola el usuario que llego al segundo 1067 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 1082
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 14.62598911457865
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 5 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 1097
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 31.390871917380206
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 1115
+La caja[0] se libera, el usuario tardo en salir: 48.16208085116543 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 1116
+Sale de la cola el usuario que llego al segundo 1097 y pasa a la caja[0]
+El usuario paso: 19 segundos en la cola 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 1128
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 62.70098361119828
+--------------------------------------------------------------------- 
+
+-------- Un usuario saldra de la cola, se tiene que ir ------ 
+Numero de usuarios en la cola: 1
+Paso un total de : 25 segundos en la cola. 
+Sale de la cola 
+Numero de usuarios en la cola (despues de salir): 0
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 1187
+La caja[0] se libera, el usuario tardo en salir: 71.06729429388616 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 1191
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 59.37253147989698
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 1191
+Sale de la cola el usuario que llego al segundo 1191 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 1235
+La caja[0] se libera, el usuario tardo en salir: 44.39107635375029 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 1250
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 128.71812439100276
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 1250
+Sale de la cola el usuario que llego al segundo 1250 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 1295
+La caja[0] se libera, el usuario tardo en salir: 44.97007361774584 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 1379
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 114.7210036623014
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 1379
+Sale de la cola el usuario que llego al segundo 1379 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
+
+--------- Termina el servicio de un usuario------------------------ 
+El usuario sale del servicio al segundo: 1416
+La caja[0] se libera, el usuario tardo en salir: 37.36733023782209 segundos. 
+--------------------------------------------------------------------- 
+
+-------------------Llega un usuario a la cola------------------------ 
+El usuario llego al segundo: 1494
+La cola actual es de :1
+El tiempo de llegada del siguiente usuario es: 14.082651402905256
+--------------------------------------------------------------------- 
+
+-------------------Sale un usuario de la cola------------------------
+El usuario sale de la cola al segundo: 1494
+Sale de la cola el usuario que llego al segundo 1494 y pasa a la caja[0]
+El usuario paso: 0 segundos en la cola 
+--------------------------------------------------------------------- 
