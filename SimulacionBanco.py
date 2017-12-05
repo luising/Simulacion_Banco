@@ -1,9 +1,12 @@
-#!/usr/bin/python3.6
+"""Simulacion de Banco."""
 import random
+
 fw = open('procedimiento.txt', 'w')
 fw1 = open('estadoActual.txt', 'w')
 fw2 = open('resultadosFinales.txt', 'w')
-#Declaracion de variables
+
+
+# Declaracion de variables
 usuarios = []
 usuarios_no_en_cola = []
 cola = []
@@ -16,62 +19,56 @@ tiempo_ocio_promedio = 0
 t_s_promedio_total = 0
 Ncajas = 4
 caja = []
-cajainicial = 	{
-		'disponible' : True,
-		'#_usuarios_usaron': 0,
-		'ts_actual': 0,
-		'ts_actual_mas_reloj': 0,
-		't_s_total': 0,
-		't_ocio': 0
-	}
+cajainicial = {
+	'disponible': True,
+	'#_usuarios_usaron': 0,
+	'ts_actual': 0,
+	'ts_actual_mas_reloj': 0,
+	't_s_total': 0,
+	't_ocio': 0
+}
+
+
+def generar_tll():
+	"""Generar tll."""
+	tll = random.lognormvariate(3.05653, 1.5459)
+	while tll > 219 or tll < 9:
+		tll = random.lognormvariate(3.05653, 1.5459)
+	return tll
+
+
 for _ in range(Ncajas):
 	caja.append(cajainicial)
 
+# Funcion que genera el TLL en base a la distribucion lognormal
 
-#Funcion que genera el TLL en base a la distribucion lognormal
-def generar_tll():
-	tll = random.lognormvariate(3.05653, 1.5459)
-	while tll > 219 or tll < 9:
-		tll = random.lognormvariate(3.05653,1.5459)
-	return tll
-
-#Avisa cuando sera el tiempo de llegada
-def aviso_tll(tll):
-	return 'El tiempo de llegada del siguiente usuario es: ' +str(tll)
-
-#Funcion que genera el TS en base a la distribucion lognormal
+# Funcion que genera el TS en base a la distribucion lognormal
 def generar_ts():
-	ts = random.lognormvariate(2.84104,1.04311)
+	ts = random.lognormvariate(2.84104, 1.04311)
 	while ts > 120 or ts < 36:
-		ts = random.lognormvariate(2.84104,1.04311)
+		ts = random.lognormvariate(2.84104, 1.04311)
 	return ts
 
-#Avisa cuando sera el tiempo de salida
+# Avisa cuando sera el tiempo de salida
 def aviso_ts(ts):
 	return 'El tiempo de llegada del siguiente usuario es: ' +str(ts)
 
 
-#Empieza la simulacion
+# Empieza la simulacion
 for i in range(0, tiempo_maximo):
 	reloj = i
 	#si no existe tiempo de llegada, lo crea
 	if tll == 0:
 		tll = generar_tll()
 		tll_entero = round(tll)
-		fw.write ('\n')
-		fw.write ('-------------------Se genera un TLL---------------------------------- \n')
-		fw.write (aviso_tll(tll) +'\n')
 		tll_mas_reloj = tll_entero + reloj
-		fw.write ('--------------------------------------------------------------------- \n')
+
 
 	#Si el tiempo de llegada + reloj es igual al reloj, 'llega' el usuario
 	#y genera otro tiempo de llegada
 	if tll_mas_reloj == reloj:
-		fw.write ('\n')
-		fw.write ('-------------------Llega un usuario a la cola------------------------ \n')
-		fw.write ('El usuario llego al segundo: ' + str(reloj) +'\n')
 		cola.append(1)
-		fw.write ('La cola actual es de :' +str(len(cola)) +'\n')
+
 		usuarios.append({
 				'tll' : tll,
 				'tll_mas_reloj' : tll_mas_reloj,
@@ -84,8 +81,13 @@ for i in range(0, tiempo_maximo):
 			})
 		tll = generar_tll()
 		tll_entero = round(tll)
-		fw.write (aviso_tll(tll) +'\n')
 		tll_mas_reloj = tll_entero + reloj
+		
+		fw.write ('\n')
+		fw.write ('-------------------Llega un usuario a la cola------------------------ \n')
+		fw.write ('El usuario llego al segundo: ' + str(reloj) +'\n')
+		fw.write ('La cola actual es de :' +str(len(cola)) +'\n')
+		fw.write (aviso_tll(tll) +'\n')
 		fw.write ('--------------------------------------------------------------------- \n')
 
 	#Si la cola es diferente a 0, trata de pasar a los usuarios a una caja
