@@ -1,0 +1,61 @@
+
+
+
+        Resultados finales de la simulacion
+        El total de usuarios que pasaron por la cola fue de: 29
+        
+
+
+
+        EL tiempo de cola promedio de los usuarios fue de: 0.5862068965517241
+        EL tiempo de llegada promedio de los usuarios fue de: 49.32346211135814
+
+    	Caja[0]
+
+            fue usada por un total de:15 personas 
+
+    	    Tiempo de ocio fue de: 603 segundos 
+
+    	    El tiempo de salida fue de: 894.69571351105 segundos 
+
+            Promedio de tiempos de salida fue de: 59.646380900736666 segundos
+
+        
+
+    	Caja[1]
+
+            fue usada por un total de:9 personas 
+
+    	    Tiempo de ocio fue de: 886 segundos 
+
+    	    El tiempo de salida fue de: 612.4576040033062 segundos 
+
+            Promedio de tiempos de salida fue de: 68.05084488925624 segundos
+
+        
+
+    	Caja[2]
+
+            fue usada por un total de:4 personas 
+
+    	    Tiempo de ocio fue de: 1208 segundos 
+
+    	    El tiempo de salida fue de: 290.9418356642186 segundos 
+
+            Promedio de tiempos de salida fue de: 72.73545891605465 segundos
+
+        
+
+    	Caja[3]
+
+            fue usada por un total de:1 personas 
+
+    	    Tiempo de ocio fue de: 1460 segundos 
+
+    	    El tiempo de salida fue de: 38.96383762846095 segundos 
+
+            Promedio de tiempos de salida fue de: 38.96383762846095 segundos
+
+        
+El tiempo de ocio promedio e: 1039.25 segundos
+El promedio de tiempo salida:59.84913058362713segundos
