@@ -1,8 +1,43 @@
 """animacion de la simulacion."""
 import pygame
 import sys
+import copy
 from pygame.locals import QUIT
 pygame.init()
+
+
+class Text:
+    def __init__(self, FontName = None, FontSize = 30):
+        pygame.font.init()
+        self.font = pygame.font.Font(FontName, FontSize)
+        self.size = FontSize
+
+    def render(self, surface, text, color, pos):
+        text = str(text)
+        x, y = pos
+        for i in text.split("\r"):
+            surface.blit(self.font.render(i, 1, color), (x, y))
+            y += self.size
+
+
+def write(m, pos, c=(0, 0, 0)):
+    """Ecribir en pantalla."""
+    text = Text()
+    text.render(ventana, m, c, pos)
+
+
+def intefaz():
+    """Mostrar Datos."""
+    tll = "{0:.3f}".format(5.1234554321)
+    write("reloj: 1000", (660, 20))
+    write("tiempo de llegada: 50", (660, 40))
+    primer = (146, 30)
+    listpos = [primer]
+    write("disponible", primer, (255, 255, 0))
+    for i in range(1, 4):
+        pos = (listpos[i - 1][0] + 130, listpos[i - 1][1] - 5)
+        write("disponible", pos, (255, 255, 0))
+        listpos.append(pos)
 
 
 def control_evento():
@@ -50,16 +85,17 @@ def atender_cliente(pos, ncaja):
     return pos
 
 
-def mostar_cola():
+def mostrar_cola():
     """Prueba de cola."""
     for pos in cola:
         crear_Usuario(pos)
 
 
-def mostar_caja():
+def mostrar_caja():
     """Prueba de cola."""
-    for pos in caja:
-        crear_Usuario(pos)
+    for i, ocupado in enumerate(cajaOcupado):
+        if ocupado:
+            crear_Usuario(caja[i][0])
 
 
 def sacar_cola():
@@ -67,41 +103,78 @@ def sacar_cola():
     cola.pop()
 
 
+def salir_Caja():
+    """Saliendo usuario."""
+    for i in range(len(cajaOcupado)):
+        if cajaOcupado[i]:
+            saliendo[i][1] = 1
+    for i in range(len(cajaOcupado)):
+        if saliendo[i][1]:
+            cajaOcupado[i] = 0
+            if saliendo[i][0][0] > salida[0]:
+                saliendo[i][0][0] -= velocidad
+            if saliendo[i][0][0] <= salida[0]:
+
+                saliendo[i][0] = copy.copy(caja[i][0])
+                saliendo[i][1] = 0
+                caja[i][1] = 1
+            crear_Usuario(saliendo[i][0])
+
+
 def obtener_caja_disponible():
     """Obtener caja disponible."""
     for i in range(len(caja)):
         if caja[i][1]:
-            print(i)
+            caja[i][1] = 0
             return i
 
 
-ventana = pygame.display.set_mode((800, 483))
+def mover_Usuario():
+    """MoverUsuario."""
+    for i in range(len(movimientoCola)):
+        if movimientoCola[i][1]:
+            movimientoCola[i][0] = atender_cliente(movimientoCola[i][0], i)
+            if type(movimientoCola[i][0]) == int:
+                movimientoCola[i][1] = 0
+                cajaOcupado[i] = 1
+                movimientoCola[i][0] = [10, 400]
+
+        crear_Usuario(movimientoCola[i][0])
+
+
+ventana = pygame.display.set_mode((1000, 483))
 pygame.display.set_caption("Simulacion de banco")
 fondo = pygame.image.load("p2.jpg").convert()
 usuario = pygame.image.load("pspr.png")
 
-cola = crear_cola(10)
+cola = crear_cola(7)
 caja = crear_caja(4)
+posInicial = [10, 400]
+salida = [10, 70]
+
+cajaOcupado = [0 for _ in range(4)]
+saliendo = [[copy.copy(caja[i][0]), 0] for i in range(4)]
+movimientoCola = [[posInicial[:], 0] for _ in range(4)]
 
 velocidad = 1
 atiende = 1000
 cont = 0
-atendiendo = 0
-pos = cola[0]
+
+
 while True:
+    ventana.fill((255, 255, 255))
     ventana.blit(fondo, (0, 0))
-    mostar_caja()
-    mostar_cola()
+    mostrar_caja()
+    mostrar_cola()
     if cont > atiende:
         cont = 0
         sacar_cola()
-        atendiendo = 1
-    else:
-        cont += 1
-    if(atendiendo):
         i = obtener_caja_disponible()
-        pos = atender_cliente(pos, i)
-        if type(pos) == int:
-            caja[i][1] = 0
-            pos = cola[0]
+        print("mover a la caja", i)
+        movimientoCola[i][1] = 1
+    else:
+        salir_Caja()
+        cont += 1
+    mover_Usuario()
+    intefaz()
     control_evento()
