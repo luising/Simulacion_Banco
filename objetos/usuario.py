@@ -12,7 +12,6 @@ class Usuario(object):
             'tll_mas_reloj': tiempo_llegada,
             'ts_actual': 0,
             'ts_actual_mas_reloj': 0,
-            'tiempo_de_cola': 0,
             'tiempo_en_cola': reloj,
             'en_cola': True,
             'activo': True
@@ -24,5 +23,4 @@ class Usuario(object):
         c_usuario['ts_actual'] = ts
         c_usuario['ts_actual_mas_reloj'] = tsplus
         c_usuario['tiempo_en_cola'] = reloj - c_usuario['tiempo_en_cola']
-        c_usuario['tiempo_de_cola'] = c_usuario['tiempo_en_cola']
         self.atributos = c_usuario

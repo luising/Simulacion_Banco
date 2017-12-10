@@ -3,41 +3,15 @@ import pygame
 import sys
 import copy
 from pygame.locals import QUIT
+from animacion.gui import gui
 pygame.init()
-
-
-class Text:
-    def __init__(self, FontName = None, FontSize = 30):
-        pygame.font.init()
-        self.font = pygame.font.Font(FontName, FontSize)
-        self.size = FontSize
-
-    def render(self, surface, text, color, pos):
-        text = str(text)
-        x, y = pos
-        for i in text.split("\r"):
-            surface.blit(self.font.render(i, 1, color), (x, y))
-            y += self.size
-
-
-def write(m, pos, c=(0, 0, 0)):
-    """Ecribir en pantalla."""
-    text = Text()
-    text.render(ventana, m, c, pos)
 
 
 def intefaz():
     """Mostrar Datos."""
-    tll = "{0:.3f}".format(5.1234554321)
-    write("reloj: 1000", (660, 20))
-    write("tiempo de llegada: 50", (660, 40))
-    primer = (146, 30)
-    listpos = [primer]
-    write("disponible", primer, (255, 255, 0))
-    for i in range(1, 4):
-        pos = (listpos[i - 1][0] + 130, listpos[i - 1][1] - 5)
-        write("disponible", pos, (255, 255, 0))
-        listpos.append(pos)
+    # tll = "{0:.3f}".format(5.1234554321)
+    g.panel()
+    g.caja()
 
 
 def control_evento():
@@ -146,6 +120,7 @@ ventana = pygame.display.set_mode((1000, 483))
 pygame.display.set_caption("Simulacion de banco")
 fondo = pygame.image.load("p2.jpg").convert()
 usuario = pygame.image.load("pspr.png")
+g = gui(ventana)
 
 cola = crear_cola(7)
 caja = crear_caja(4)
